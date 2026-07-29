@@ -1,5 +1,6 @@
 # Deutsch IPTV — Premium IPTV Website (deutsch-iptv.store)
 
+
 Eine komplett neu gestaltete, hochwertige IPTV-Streaming-Website für den **deutschen Markt**, optimiert für das Keyword **„iptv kaufen“** und verwandte Suchbegriffe.
 
 Gebaut mit **Next.js 15**, **React 19**, **TypeScript**, **Tailwind CSS**, **Framer Motion** und **Shadcn/UI-Stilprinzipien**. Dunkles Charcoal-Design mit Gold- und Emerald-Akzenten, Glassmorphism, sanften Glows und Premium-Mikrointeraktionen.
