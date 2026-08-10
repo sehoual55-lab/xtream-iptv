@@ -25,11 +25,9 @@ export const siteConfig = {
   // ── İletişim ───────────────────────────────────────────────────────────────
   contact: {
     // Telefon (uluslararası, ülke koduyla)
-    phone: "+33 7 56 75 73 87",
-    // Bağlantılar / WhatsApp için: yalnızca rakamlar, + ve boşluk olmadan
-    phoneRaw: "33756757387",
-    // WhatsApp numarası (genellikle telefon ile aynı)
-    whatsapp: "33756757387",
+    phone: "+1 (661) 541-3954",
+    phoneRaw: "16615413954",
+    whatsapp: "16615413954",
     email: "destek@xtream-iptv.store",
     // WhatsApp sohbetinde önceden doldurulan varsayılan mesaj
     whatsappDefaultMessage:
