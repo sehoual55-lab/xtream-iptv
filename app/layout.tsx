@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "@fontsource-variable/inter";
 import "@fontsource/sora/400.css";
 import "@fontsource/sora/500.css";
@@ -78,6 +79,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <Script src="/xtream-checkout.js" strategy="afterInteractive" />
       </body>
     </html>
   );
