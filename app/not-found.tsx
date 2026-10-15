@@ -7,18 +7,18 @@ export default function NotFound() {
       <div className="text-center">
         <p className="font-display text-7xl font-extrabold text-gold-gradient md:text-8xl">404</p>
         <h1 className="mt-4 font-display text-2xl font-bold text-white md:text-3xl">
-          Seite nicht gefunden
+          Sayfa bulunamadı
         </h1>
         <p className="mx-auto mt-3 max-w-md text-slate-400">
-          Diese Seite existiert leider nicht. Kehre zur Startseite zurück oder entdecke unsere
-          IPTV-Pakete.
+          Aradığınız sayfa mevcut değil ya da taşınmış olabilir. Ana sayfaya dönün veya
+          IPTV paketlerimizi keşfedin.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link href="/" className="btn-premium">
-            <Home className="h-4 w-4" /> Zur Startseite
+            <Home className="h-4 w-4" /> Ana Sayfa
           </Link>
           <Link href="/preise" className="btn-ghost">
-            Zu den Preisen <ArrowRight className="h-4 w-4" />
+            Fiyatlara Git <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>

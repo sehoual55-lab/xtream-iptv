@@ -62,7 +62,7 @@ export function organizationJsonLd() {
       contactType: "customer support",
       url: buildWhatsAppLink(),
       areaServed: siteConfig.locale.country,
-      availableLanguage: ["German"],
+      availableLanguage: ["Turkish"],
     },
   };
 }

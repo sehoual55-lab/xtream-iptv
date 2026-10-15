@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Clock, Calendar, ArrowRight } from "lucide-react";
-import { buildMetadata, articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
+import { buildMetadata, articleJsonLd, breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { Markdown } from "@/components/markdown";
 import { Reveal } from "@/components/reveal";
@@ -61,10 +61,11 @@ export default async function BlogPostPage({
             image: post.cover,
           }),
           breadcrumbJsonLd([
-            { name: "Start", path: "/" },
+            { name: "Ana Sayfa", path: "/" },
             { name: "Blog", path: "/blog" },
             { name: post.title, path: `/blog/${post.slug}` },
           ]),
+          ...(post.faqs && post.faqs.length > 0 ? [faqJsonLd(post.faqs)] : []),
         ]}
       />
 

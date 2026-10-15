@@ -19,8 +19,11 @@ export const siteConfig = {
   },
 
   // ── Alan adı & URL'ler ─────────────────────────────────────────────────────
-  domain: "xtream-iptv.store",
-  url: "https://xtream-iptv.store",
+  // Bu site Vercel'de www.iptv-xtream.store adresinde yayındadır; canonical ve
+  // sitemap adresleri bu alan adını kullanmalıdır (aksi halde Google başka bir
+  // alan adını "asıl" sayar ve bu site aramalarda düşer).
+  domain: "iptv-xtream.store",
+  url: "https://www.iptv-xtream.store",
 
   // ── İletişim ───────────────────────────────────────────────────────────────
   contact: {
