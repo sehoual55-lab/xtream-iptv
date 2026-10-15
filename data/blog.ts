@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-10-15",
     readingTime: "9 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1200&q=80",
+    cover: "/images/blog/xtream-iptv-tam-rehber-2026.jpg",
     faqs: [
       {
             question: "Xtream IPTV yasal mı?",
@@ -205,7 +205,7 @@ Xtream IPTV, uydu ya da kablo aboneliğine ihtiyaç duymadan binlerce kanalı ve
     date: "2026-10-14",
     readingTime: "8 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80",
+    cover: "/images/blog/xtream-iptv-kodlari-nasil-alinir-girilir.jpg",
     faqs: [
       {
             question: "Xtream IPTV kodları ücretsiz alınabilir mi?",
@@ -382,7 +382,7 @@ Xtream IPTV kodları üç basit bilgiden oluşur ve doğru kaynaktan alındığ�
     date: "2026-10-13",
     readingTime: "8 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=1200&q=80",
+    cover: "/images/blog/xtream-iptv-kullanici-adi-sifre.jpg",
     faqs: [
       {
             question: "Xtream IPTV kullanıcı adı ve şifre ücretsiz alınabilir mi?",
@@ -564,7 +564,7 @@ Xtream IPTV kullanıcı adı ve şifreniz, aboneliğinizle birlikte size özel o
     date: "2026-10-12",
     readingTime: "8 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&q=80",
+    cover: "/images/blog/gunluk-guncel-calisan-xtream-iptv-kodlari.jpg",
     faqs: [
       {
             question: "Günlük güncel Xtream IPTV kodları gerçekten çalışıyor mu?",
@@ -748,7 +748,7 @@ Bir kod kaynağını değerlendirirken şu dört soruya "evet" alamıyorsanız u
     date: "2026-10-11",
     readingTime: "8 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=1200&q=80",
+    cover: "/images/blog/xtream-nedir-xtream-codes-api-rehberi.jpg",
     faqs: [
       {
             question: "Xtream ile Xtream Codes aynı şey mi?",
@@ -935,7 +935,7 @@ Xtream, IPTV izlemeyi üç bilgiye indirgeyen ve kanal listesinden TV rehberine 
     date: "2026-10-10",
     readingTime: "8 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1200&q=80",
+    cover: "/images/blog/atak-iptv-nedir-alternatif-karsilastirma.jpg",
     faqs: [
       {
             question: "Atak IPTV ile Xtream IPTV aynı şey mi?",
@@ -1104,7 +1104,7 @@ Atak IPTV ya da başka bir hizmeti değerlendirirken isimden çok kararlılık, 
     date: "2026-06-22",
     readingTime: "8 dk",
     author: "Xtream IPTV Ekibi",
-    cover: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1200&q=80",
+    cover: "/images/blog/xtream-iptv-nedir-rehber-2026.jpg",
     content: `## Xtream IPTV nedir?
 
 **Xtream IPTV**, televizyonu kablo, uydu veya anten yerine internet üzerinden izlemenizi sağlayan modern bir yayın teknolojisidir. Xtream Codes tabanlı bir sistem sayesinde on binlerce kanala ve devasa bir film-dizi arşivine tek bir bağlantı üzerinden erişirsiniz.
