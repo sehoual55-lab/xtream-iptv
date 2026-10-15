@@ -37,6 +37,12 @@ export const siteConfig = {
       "Merhaba! Xtream IPTV aboneliği ile ilgileniyorum. Bana yardımcı olabilir misiniz?",
   },
 
+  // ── Tarihler (görünür "son güncelleme" + schema datePublished/dateModified) ──
+  dates: {
+    published: "2026-07-27",
+    updated: "2026-10-15",
+  },
+
   // ── Ülke & Dil ─────────────────────────────────────────────────────────────
   locale: {
     language: "tr",

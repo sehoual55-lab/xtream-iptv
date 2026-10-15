@@ -33,6 +33,7 @@ export const footerNav = {
   unternehmen: {
     title: "Kurumsal",
     links: [
+      { label: "Hakkımızda", href: "/hakkimizda" },
       { label: "İletişim", href: "/kontakt" },
       { label: "Gizlilik Politikası", href: "/datenschutz" },
       { label: "Kullanım Şartları", href: "/agb" },

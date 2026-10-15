@@ -76,12 +76,17 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 text-sm text-slate-500 md:flex-row">
           <p>
-            © {year} {siteConfig.brand.legalName}. Tüm hakları saklıdır.
+            © {year} {siteConfig.brand.legalName}. Tüm hakları saklıdır. ·{" "}
+            Son güncelleme:{" "}
+            <time dateTime={siteConfig.dates.updated}>
+              {new Date(siteConfig.dates.updated).toLocaleDateString("tr-TR", { year: "numeric", month: "long", day: "numeric" })}
+            </time>
           </p>
-          <div className="flex gap-6">
-            <Link href="/datenschutz" className="hover:text-slate-300">Datenschutz</Link>
-            <Link href="/agb" className="hover:text-slate-300">AGB</Link>
-            <Link href="/kontakt" className="hover:text-slate-300">Kontakt</Link>
+          <div className="flex flex-wrap gap-6">
+            <Link href="/hakkimizda" className="hover:text-slate-300">Hakkımızda</Link>
+            <Link href="/datenschutz" className="hover:text-slate-300">Gizlilik</Link>
+            <Link href="/agb" className="hover:text-slate-300">Kullanım Şartları</Link>
+            <Link href="/kontakt" className="hover:text-slate-300">İletişim</Link>
           </div>
         </div>
       </div>

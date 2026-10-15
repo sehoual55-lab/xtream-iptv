@@ -14,7 +14,7 @@ import { BlogLatest } from "@/components/sections/blog-latest";
 import { Cta } from "@/components/sections/cta";
 import { SectionHeading } from "@/components/section-heading";
 import { JsonLd } from "@/components/jsonld";
-import { faqJsonLd, productJsonLd } from "@/lib/seo";
+import { faqJsonLd, productJsonLd, webPageJsonLd } from "@/lib/seo";
 import { faqs } from "@/data/faqs";
 import { siteConfig } from "@/config/site.config";
 import { getShowcase } from "@/lib/tmdb";
@@ -27,6 +27,7 @@ export default async function HomePage() {
     <>
       <JsonLd
         data={[
+          webPageJsonLd({ title: siteConfig.seo.defaultTitle, description: siteConfig.seo.defaultDescription, path: "/" }),
           faqJsonLd(homeFaqs),
           productJsonLd({
             name: "Gold",

@@ -24,7 +24,10 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.brand.name }],
   creator: siteConfig.brand.name,
   publisher: siteConfig.brand.name,
-  alternates: { canonical: siteConfig.url },
+  alternates: {
+    canonical: siteConfig.url,
+    types: { "application/rss+xml": `${siteConfig.url}/feed.xml` },
+  },
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
@@ -73,6 +76,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
         />
+        <link rel="alternate" type="application/rss+xml" title={`${siteConfig.brand.name} Blog`} href="/feed.xml" />
       </head>
       <body className="min-h-screen font-sans">
         <Header />

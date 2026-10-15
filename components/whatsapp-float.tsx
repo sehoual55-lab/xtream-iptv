@@ -33,7 +33,7 @@ export function WhatsAppFloat() {
             <button
               onClick={() => setBubble(false)}
               className="absolute right-2 top-2 text-slate-400 hover:text-white"
-              aria-label="Schließen"
+              aria-label="Kapat"
             >
               <X className="h-3.5 w-3.5" />
             </button>

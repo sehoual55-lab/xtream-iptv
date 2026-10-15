@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
-  const now = new Date("2026-07-27");
+  const now = new Date(siteConfig.dates.updated);
 
   const staticRoutes: { path: string; priority: number; freq: "weekly" | "monthly" | "daily" }[] = [
     { path: "/", priority: 1.0, freq: "daily" },
@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/installation", priority: 0.7, freq: "monthly" },
     { path: "/blog", priority: 0.7, freq: "weekly" },
     { path: "/faq", priority: 0.7, freq: "monthly" },
+    { path: "/hakkimizda", priority: 0.5, freq: "monthly" },
     { path: "/kontakt", priority: 0.6, freq: "monthly" },
     { path: "/datenschutz", priority: 0.3, freq: "monthly" },
     { path: "/agb", priority: 0.3, freq: "monthly" },

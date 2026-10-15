@@ -1,0 +1,15 @@
+# ai.txt — AI crawler permissions for www.iptv-xtream.store
+# Spec: https://site.spawning.ai/spawning-ai-txt
+
+User-Agent: *
+Allow: /
+
+# Content types
+Allow: text
+Allow: image
+Allow: code
+
+# Where to learn about this site
+Summary: https://www.iptv-xtream.store/llms.txt
+Sitemap: https://www.iptv-xtream.store/sitemap.xml
+Contact: destek@xtream-iptv.store

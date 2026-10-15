@@ -34,7 +34,7 @@ export function FilmShowcase({ posters }: { posters: MediaItem[] }) {
             >
               <Image
                 src={item.poster}
-                alt={item.title ? `${item.title} – Xtream IPTV film & dizi` : "Xtream IPTV film & dizi"}
+                alt={item.title ? `${item.title} – film afişi` : "Film ve dizi afişi"}
                 fill
                 sizes="(max-width: 640px) 192px, 256px"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"

@@ -49,14 +49,28 @@ export function buildMetadata({
   };
 }
 
+/** Gerçek sosyal profil bağlantıları (site.config.ts içinde "#" olmayanlar). */
+function socialLinks(): string[] {
+  return Object.values(siteConfig.social).filter((u) => typeof u === "string" && u.startsWith("http"));
+}
+
 /** JSON-LD: Organisation */
 export function organizationJsonLd() {
+  const sameAs = socialLinks();
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.brand.name,
+    legalName: siteConfig.brand.legalName,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/images/logo.png`,
+    logo: `${siteConfig.url}/favicon.svg`,
+    image: `${siteConfig.url}${siteConfig.seo.ogImage}`,
+    email: siteConfig.contact.email,
+    telephone: `+${siteConfig.contact.phoneRaw}`,
+    foundingDate: siteConfig.dates.published,
+    areaServed: { "@type": "Country", name: siteConfig.locale.countryName },
+    ...(sameAs.length ? { sameAs } : {}),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
@@ -67,14 +81,34 @@ export function organizationJsonLd() {
   };
 }
 
-/** JSON-LD: Website mit SearchAction */
+/** JSON-LD: Website */
 export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${siteConfig.url}/#website`,
     name: siteConfig.brand.name,
     url: siteConfig.url,
     inLanguage: siteConfig.locale.language,
+    datePublished: siteConfig.dates.published,
+    dateModified: siteConfig.dates.updated,
+    publisher: { "@id": `${siteConfig.url}/#organization` },
+  };
+}
+
+/** JSON-LD: WebPage (tarihli) — her sayfanın yayın/güncelleme tarihini AI ve Google'a bildirir. */
+export function webPageJsonLd(opts: { title: string; description: string; path: string; published?: string; modified?: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: opts.title,
+    description: opts.description,
+    url: `${siteConfig.url}${opts.path}`,
+    inLanguage: siteConfig.locale.language,
+    datePublished: opts.published ?? siteConfig.dates.published,
+    dateModified: opts.modified ?? siteConfig.dates.updated,
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
+    about: { "@id": `${siteConfig.url}/#organization` },
   };
 }
 
@@ -102,6 +136,7 @@ export function productJsonLd(plan: {
     "@type": "Product",
     name: `${plan.name} IPTV Paket`,
     description: plan.description,
+    image: `${siteConfig.url}${siteConfig.seo.ogImage}`,
     brand: { "@type": "Brand", name: siteConfig.brand.name },
     offers: {
       "@type": "Offer",
