@@ -43,8 +43,9 @@ ${planLines.join("\n")}
 
 ${posts.join("\n")}
 
-## Diğer kaynaklar
+## Optional
 
+- [Tam içerik (llms-full.txt)](${base}/llms-full.txt): tüm sayfa ve blog metinleri tek dosyada
 - [Site haritası](${base}/sitemap.xml)
 - [RSS akışı](${base}/feed.xml)
 - [AI özeti (JSON)](${base}/ai/summary.json)

@@ -143,6 +143,8 @@ function PlanCard({ plan, index }: { plan: Plan; index: number }) {
 
       <a
         href={buildWhatsAppLink(orderMessage)}
+        toolname={`order_${plan.name.toLowerCase()}_plan`}
+        tooldescription={`${plan.name} paketini (${plan.duration}) WhatsApp üzerinden sipariş et`}
         target="_blank"
         rel="noopener noreferrer"
         className={cn(

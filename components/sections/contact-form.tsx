@@ -16,6 +16,8 @@ export function ContactForm() {
       action="/kontakt"
       method="get"
       aria-label="İletişim formu"
+      toolname="contact_support"
+      tooldescription="Ad, konu ve mesaj ile WhatsApp destek ekibine soru gönder"
       onSubmit={(e) => {
         e.preventDefault();
         window.open(buildWhatsAppLink(composed), "_blank", "noopener,noreferrer");

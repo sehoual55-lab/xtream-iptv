@@ -4,6 +4,7 @@ import { ArrowRight, Clock } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { blogPosts } from "@/data/blog";
+import { siteConfig } from "@/config/site.config";
 
 export function BlogLatest() {
   const posts = blogPosts.slice(0, 3);
@@ -59,6 +60,13 @@ export function BlogLatest() {
           ))}
         </div>
 
+        <p className="mt-6 text-center text-xs text-silver-500">
+          Yazılar{" "}
+          <Link href="/hakkimizda" rel="author" className="author text-silver hover:text-white">
+            {siteConfig.brand.editorName}
+          </Link>{" "}
+          tarafından hazırlanır ve düzenli olarak güncellenir.
+        </p>
         <div className="mt-10 text-center">
           <Link href="/blog" className="btn-ghost">
             Tüm yazıları gör <ArrowRight className="h-4 w-4" />

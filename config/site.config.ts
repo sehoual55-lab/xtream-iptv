@@ -16,6 +16,7 @@ export const siteConfig = {
     legalName: "Xtream-IPTV.store",
     tagline: "Premium Xtream IPTV Kontrol Merkezi",
     slogan: "Yayın operasyon merkezine hoş geldiniz.",
+    editorName: "Xtream IPTV Ekibi",
   },
 
   // ── Alan adı & URL'ler ─────────────────────────────────────────────────────

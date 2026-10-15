@@ -90,7 +90,9 @@ export default async function BlogPostPage({
               <span className="inline-flex items-center gap-1.5">
                 <Clock className="h-4 w-4" /> {post.readingTime}
               </span>
-              <span>{post.author}</span>
+              <Link href="/hakkimizda" rel="author" className="author hover:text-white">
+                {post.author}
+              </Link>
             </div>
           </div>
 

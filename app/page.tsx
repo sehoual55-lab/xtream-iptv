@@ -15,7 +15,8 @@ import { ContactForm } from "@/components/sections/contact-form";
 import { Cta } from "@/components/sections/cta";
 import { SectionHeading } from "@/components/section-heading";
 import { JsonLd } from "@/components/jsonld";
-import { faqJsonLd, productJsonLd, webPageJsonLd } from "@/lib/seo";
+import { authorJsonLd, faqJsonLd, latestPostsJsonLd, productJsonLd, webAppJsonLd, webPageJsonLd } from "@/lib/seo";
+import { blogPosts } from "@/data/blog";
 import { faqs } from "@/data/faqs";
 import { siteConfig } from "@/config/site.config";
 import { getShowcase } from "@/lib/tmdb";
@@ -30,6 +31,9 @@ export default async function HomePage() {
         data={[
           webPageJsonLd({ title: siteConfig.seo.defaultTitle, description: siteConfig.seo.defaultDescription, path: "/" }),
           faqJsonLd(homeFaqs),
+          webAppJsonLd(),
+          authorJsonLd(),
+          latestPostsJsonLd(blogPosts.slice(0, 3).map((p) => ({ title: p.title, description: p.description, date: p.date, slug: p.slug, image: p.cover }))),
           productJsonLd({
             name: "Gold",
             price: 49.99,

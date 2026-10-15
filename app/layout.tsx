@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   publisher: siteConfig.brand.name,
   alternates: {
     canonical: siteConfig.url,
+    languages: { tr: siteConfig.url, "tr-TR": siteConfig.url, "x-default": siteConfig.url },
     types: { "application/rss+xml": `${siteConfig.url}/feed.xml` },
   },
   icons: {

@@ -24,7 +24,7 @@ export function buildMetadata({
     title,
     description,
     keywords: keywords ?? [...siteConfig.seo.keywords],
-    alternates: { canonical: url },
+    alternates: { canonical: url, languages: { tr: url, "tr-TR": url, "x-default": url } },
     openGraph: {
       type: "website",
       locale: siteConfig.locale.ogLocale,
@@ -188,12 +188,77 @@ export function articleJsonLd(post: {
     description: post.description,
     image: post.image,
     datePublished: post.date,
-    author: { "@type": "Organization", name: post.author },
+    dateModified: post.date,
+    inLanguage: siteConfig.locale.language,
+    author: {
+      "@type": "Person",
+      "@id": `${siteConfig.url}/hakkimizda#editor`,
+      name: post.author,
+      url: `${siteConfig.url}/hakkimizda`,
+      worksFor: { "@id": `${siteConfig.url}/#organization` },
+    },
     publisher: {
       "@type": "Organization",
       name: siteConfig.brand.name,
       logo: { "@type": "ImageObject", url: `${siteConfig.url}/images/logo.png` },
     },
     mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`,
+  };
+}
+
+/** JSON-LD: Yazar (Person) — editör ekibini temsil eden kalıcı kimlik. */
+export function authorJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteConfig.url}/hakkimizda#editor`,
+    name: siteConfig.brand.editorName,
+    jobTitle: "İçerik Editörü",
+    url: `${siteConfig.url}/hakkimizda`,
+    worksFor: { "@id": `${siteConfig.url}/#organization` },
+    knowsAbout: ["IPTV", "Xtream Codes", "Smart TV kurulumu", "Android TV", "Yayın teknolojileri"],
+  };
+}
+
+/** JSON-LD: Ana sayfadaki son yazılar (BlogPosting listesi, dateModified ile). */
+export function latestPostsJsonLd(posts: { title: string; description: string; date: string; slug: string; image: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Son rehberler",
+    itemListElement: posts.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "BlogPosting",
+        "@id": `${siteConfig.url}/blog/${p.slug}`,
+        headline: p.title,
+        description: p.description,
+        url: `${siteConfig.url}/blog/${p.slug}`,
+        image: `${siteConfig.url}${p.image}`,
+        datePublished: p.date,
+        dateModified: p.date,
+        inLanguage: siteConfig.locale.language,
+        author: { "@id": `${siteConfig.url}/hakkimizda#editor` },
+        publisher: { "@id": `${siteConfig.url}/#organization` },
+      },
+    })),
+  };
+}
+
+/** JSON-LD: WebApplication — site içi arama ve sipariş akışı. */
+export function webAppJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "@id": `${siteConfig.url}/#webapp`,
+    name: `${siteConfig.brand.name} Portal`,
+    url: siteConfig.url,
+    applicationCategory: "EntertainmentApplication",
+    operatingSystem: "Web, Android, iOS, Smart TV",
+    browserRequirements: "Requires JavaScript",
+    inLanguage: siteConfig.locale.language,
+    offers: { "@type": "Offer", price: "39.99", priceCurrency: siteConfig.locale.currency, url: `${siteConfig.url}/preise` },
+    publisher: { "@id": `${siteConfig.url}/#organization` },
   };
 }
