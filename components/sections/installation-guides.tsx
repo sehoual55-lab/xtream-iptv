@@ -20,13 +20,13 @@ const guides: Guide[] = [
     title: "Smart TV",
     app: "Smart IPTV / IBO Player",
     icon: Tv,
-    steps: ["TV mağazasından uygulamayı kurun", "m3u bağlantısını veya Xtream Codes girin", "Kanal listesi & EPG yükleyin"],
+    steps: ["TV mağazasından uygulamayı kurun", "m3u bağlantısını veya giriş kodlarını girin", "Kanal listesi & EPG yükleyin"],
   },
   {
     title: "Fire TV Stick",
-    app: "IPTV Smarters / TiviMate",
+    app: "Smarters Pro / TiviMate",
     logo: "amazon",
-    steps: ["Downloader'ı kurun", "IPTV Smarters'ı yükleyin", "Xtream Codes ile giriş yapın"],
+    steps: ["Downloader'ı kurun", "Smarters Pro'ı yükleyin", "Giriş bilgilerinizi yazın"],
   },
   {
     title: "Android TV",
@@ -42,31 +42,31 @@ const guides: Guide[] = [
   },
   {
     title: "Apple TV",
-    app: "IPTV Smarters Pro",
+    app: "Smarters Pro",
     logo: "appletv",
-    steps: ["App Store'dan IPTV Smarters indirin", "Xtream Codes API ile giriş yapın", "4K'da yayın izleyin"],
+    steps: ["App Store'dan Smarters Pro indirin", "Codes API ile giriş yapın", "4K'da yayın izleyin"],
   },
   {
     title: "Windows",
-    app: "VLC / IPTV Smarters",
+    app: "VLC / Smarters Pro",
     logo: "windows",
-    steps: ["IPTV Smarters veya VLC kurun", "m3u bağlantısını açın", "Kanalları & VOD'u izleyin"],
+    steps: ["Smarters Pro veya VLC kurun", "m3u bağlantısını açın", "Kanalları & VOD'u izleyin"],
   },
   {
     title: "macOS",
-    app: "IPTV Smarters / VLC",
+    app: "Smarters Pro / VLC",
     logo: "apple",
-    steps: ["Uygulamayı kurun", "Xtream Codes veya m3u girin", "Mac'te yayın izleyin"],
+    steps: ["Uygulamayı kurun", "Giriş kodlarını veya m3u girin", "Mac'te yayın izleyin"],
   },
   {
     title: "iPhone & iPad",
-    app: "IPTV Smarters Pro",
+    app: "Smarters Pro",
     logo: "apple",
-    steps: ["App Store'dan uygulamayı indirin", "Xtream Codes API ile giriş yapın", "Her yerde izleyin"],
+    steps: ["App Store'dan uygulamayı indirin", "Giriş bilgilerinizi girin", "Her yerde izleyin"],
   },
   {
     title: "Android",
-    app: "IPTV Smarters / TiviMate",
+    app: "Smarters Pro / TiviMate",
     logo: "android",
     steps: ["Play Store'dan uygulamayı indirin", "m3u listesi ekleyin", "Hemen başlayın"],
   },
@@ -90,7 +90,7 @@ export function InstallationGuides() {
           {guides.map((g, i) => (
             <motion.div
               key={g.title}
-              initial={{ opacity: 0, y: 22 }}
+              initial={{ y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.45, delay: (i % 3) * 0.06 }}

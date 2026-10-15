@@ -35,7 +35,7 @@ export function Trusted() {
                   <s.icon className="h-5 w-5" />
                 </span>
                 <motion.div
-                  initial={{ opacity: 0 }}
+                  initial={{ y: 10 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   className="mt-4 font-display text-3xl font-extrabold text-white md:text-4xl"

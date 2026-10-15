@@ -18,7 +18,7 @@ export function FilmShowcase({ posters }: { posters: MediaItem[] }) {
               Kütüphanende <span className="text-gold-gradient">yeni içerikler</span>
             </>
           }
-          subtitle="Xtream IPTV'deki en popüler içeriklerden dönüşümlü bir seçki – her hafta güncellenir, her zaman 4K kalitede."
+          subtitle="Kütüphanemizdeki en popüler içeriklerden dönüşümlü bir seçki – her hafta güncellenir, her zaman 4K kalitede."
         />
       </div>
 

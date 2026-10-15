@@ -15,7 +15,7 @@ export function Hero() {
       <div className="container relative">
         <div className="mx-auto max-w-4xl text-center">
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.05 }}
             className="font-display text-4xl font-extrabold leading-[1.06] tracking-tight text-white text-balance sm:text-6xl md:text-7xl"
@@ -25,18 +25,18 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.12 }}
             className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-silver sm:text-xl"
           >
             130.000+ canlı kanal ve 140.000+ film &amp; dizi, gerçek 4K kalitede.
-            Xtream Codes girişi, anında aktivasyon ve tüm cihazlarda Xtream IPTV Player desteği —
+            Codes girişi, anında aktivasyon ve tüm cihazlarda oynatıcı desteği —
             binlerce yayını yöneten yüksek teknolojili platform.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.18 }}
             className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
@@ -55,7 +55,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ y: 10 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.28 }}
             className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-xs text-silver-500"
@@ -74,7 +74,7 @@ export function Hero() {
 
         {/* Merkezi istatistik çubuğu */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
           className="hud mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-px overflow-hidden rounded-4xl md:grid-cols-4"

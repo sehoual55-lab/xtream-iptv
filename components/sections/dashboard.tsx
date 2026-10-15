@@ -30,12 +30,12 @@ const features = [
   {
     icon: Zap,
     title: "Anında Aktivasyon",
-    text: "Sipariş sonrası Xtream Codes bilgileriniz dakikalar içinde teslim edilir.",
+    text: "Sipariş sonrası giriş bilgileriniz dakikalar içinde teslim edilir.",
   },
   {
     icon: ShieldCheck,
     title: "Güvenli & Yasal",
-    text: "Kurulum resmi Xtream player uygulamalarıyla yapılır – crack gerektirmez.",
+    text: "Kurulum resmî oynatıcı uygulamalarıyla yapılır – crack gerektirmez.",
   },
   {
     icon: RefreshCw,
@@ -65,14 +65,14 @@ export function Dashboard() {
               Neden <span className="text-gold-gradient">Xtream IPTV?</span>
             </>
           }
-          subtitle="Premium kalite, adil fiyat ve gerçekten çalışan bir hizmet. Xtream IPTV ile sizi bekleyenler."
+          subtitle="Premium kalite, adil fiyat ve gerçekten çalışan bir hizmet. Sizi bekleyenler."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: (i % 3) * 0.06 }}

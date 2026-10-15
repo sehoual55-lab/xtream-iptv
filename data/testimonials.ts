@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     plan: "Gold Paket",
     verified: true,
-    text: "Xtream IPTV beni tamamen etkiledi. Xtream Codes bilgilerini Fire TV Stick'e girdim, Süper Lig 4K donmadan aktı. Bugüne kadarki en kararlı sağlayıcı.",
+    text: "Bu hizmet beni tamamen etkiledi. Giriş bilgilerini Fire TV Stick'e girdim, Süper Lig 4K donmadan aktı. Bugüne kadarki en kararlı sağlayıcı.",
   },
   {
     name: "Zeynep Demir",
@@ -31,7 +31,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     plan: "Exclusive Paket",
     verified: true,
-    text: "Xtream IPTV Player kurulumu beş dakikada bitti. Film ve dizi arşivi devasa, her akşam yeni bir şey izliyoruz. Destek WhatsApp'tan dakikalar içinde yanıtladı.",
+    text: "Oynatıcı kurulumu beş dakikada bitti. Film ve dizi arşivi devasa, her akşam yeni bir şey izliyoruz. Destek WhatsApp'tan dakikalar içinde yanıtladı.",
   },
   {
     name: "Mert Kaya",
@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     plan: "Platinum Paket",
     verified: true,
-    text: "Sonunda gerçek 4K sunan ciddi bir sağlayıcı. TV rehberi (EPG) eksiksiz, Xtream kodları sorunsuz çalışıyor. Kesinlikle tavsiye ederim.",
+    text: "Sonunda gerçek 4K sunan ciddi bir sağlayıcı. TV rehberi (EPG) eksiksiz, kodlar sorunsuz çalışıyor. Kesinlikle tavsiye ederim.",
   },
   {
     name: "Elif Şahin",
@@ -49,7 +49,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     plan: "Gold Paket",
     verified: true,
-    text: "Önce tereddüt ettim ama Xtream IPTV gerçekten iş görüyor. Samsung TV'mde xtream code iptv girişi kusursuz çalıştı. Eski sağlayıcımla kıyaslanamaz.",
+    text: "Önce tereddüt ettim ama bu hizmet gerçekten iş görüyor. Samsung TV'mde codes girişi kusursuz çalıştı. Eski sağlayıcımla kıyaslanamaz.",
   },
   {
     name: "Burak Çelik",
@@ -76,7 +76,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     plan: "Platinum Paket",
     verified: true,
-    text: "Hızlı destek, uygun fiyat ve devasa kanal listesi. Xtream IPTV APK'yı Android kutuma kurdum, TiviMate ile mükemmel çalıştı. Bildiğim en iyi hizmet.",
+    text: "Hızlı destek, uygun fiyat ve devasa kanal listesi. APK'yı Android kutuma kurdum, TiviMate ile mükemmel çalıştı. Bildiğim en iyi hizmet.",
   },
   {
     name: "Deniz Koç",
@@ -85,6 +85,6 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     plan: "Gold Paket",
     verified: true,
-    text: "Her şey akıcı, akşamları buffer sorunu yok. Xtream player üzerinden kanallar HD ve 4K'da güvenle çalışıyor. Çok tavsiye ederim.",
+    text: "Her şey akıcı, akşamları buffer sorunu yok. Oynatıcı üzerinden kanallar HD ve 4K'da güvenle çalışıyor. Çok tavsiye ederim.",
   },
 ];

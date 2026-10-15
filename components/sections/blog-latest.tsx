@@ -18,7 +18,7 @@ export function BlogLatest() {
               Son <span className="text-gold-gradient">rehberler & ipuçları</span>
             </>
           }
-          subtitle="Xtream IPTV, Xtream Codes ve yayın hakkında rehberler, kurulum anlatımları ve ipuçları."
+          subtitle="IPTV, giriş kodları ve yayın hakkında rehberler, kurulum anlatımları ve ipuçları."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -47,7 +47,9 @@ export function BlogLatest() {
                     </span>
                   </div>
                   <h3 className="mt-4 font-display text-lg font-semibold text-white">{post.title}</h3>
-                  <p className="mt-2 flex-1 text-sm text-silver-500">{post.description}</p>
+                  <p className="mt-2 flex-1 text-sm text-silver-500">
+                    {post.description.replace(/^Xtream IPTV\s*/i, "").replace(/^\p{Ll}/u, (c) => c.toLocaleUpperCase("tr-TR")).slice(0, 110)}…
+                  </p>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-cyan">
                     Devamını oku <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                   </span>

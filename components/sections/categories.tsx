@@ -29,14 +29,14 @@ export function Categories() {
               <span className="text-gold-gradient">tek merkezde</span>
             </>
           }
-          subtitle="Canlı spordan belgesellere: Xtream IPTV her kategoriyi tek ve şık bir uygulamada toplar."
+          subtitle="Canlı spordan belgesellere: her kategoriyi tek ve şık bir uygulamada toplar."
         />
 
         <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
           {categories.map((c, i) => (
             <motion.div
               key={c.title}
-              initial={{ opacity: 0, y: 22 }}
+              initial={{ y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.45, delay: (i % 4) * 0.06 }}

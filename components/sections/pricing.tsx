@@ -62,7 +62,7 @@ function PlanCard({ plan, index }: { plan: Plan; index: number }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
@@ -185,7 +185,7 @@ export function Pricing({ showHeading = true }: { showHeading?: boolean }) {
 
         <p className="mt-10 text-center text-sm text-silver-500">
           Sipariş güvenli ve kolayca WhatsApp üzerinden tamamlanır. Ödeme sonrası
-          Xtream Codes bilgileriniz anında teslim edilir.
+          Giriş bilgileriniz anında teslim edilir.
         </p>
       </div>
     </section>

@@ -29,14 +29,14 @@ export function Hero({ posters }: { posters: MediaItem[] }) {
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Copy */}
           <div>
-            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <motion.div initial={{ y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <span className="eyebrow">
                 <span className="status-dot" /> // YAYIN KONTROL MERKEZİ
               </span>
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.05 }}
               className="mt-6 font-display text-4xl font-extrabold leading-[1.06] tracking-tight text-white text-balance sm:text-5xl md:text-6xl"
@@ -46,7 +46,7 @@ export function Hero({ posters }: { posters: MediaItem[] }) {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.12 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-silver sm:text-xl"
@@ -57,7 +57,7 @@ export function Hero({ posters }: { posters: MediaItem[] }) {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.18 }}
               className="mt-9 flex flex-col gap-3 sm:flex-row"
@@ -71,7 +71,7 @@ export function Hero({ posters }: { posters: MediaItem[] }) {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={{ y: 10 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.28 }}
               className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs text-silver-500"
@@ -90,7 +90,7 @@ export function Hero({ posters }: { posters: MediaItem[] }) {
 
           {/* Command console */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.94, y: 20 }}
+            initial={{ scale: 0.94, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative"

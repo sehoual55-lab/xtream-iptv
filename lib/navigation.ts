@@ -16,15 +16,15 @@ export const footerNav = {
     links: [
       { label: "Xtream IPTV", href: "/xtream-iptv" },
       { label: "Fiyatlar & Paketler", href: "/preise" },
-      { label: "Xtream IPTV Player", href: "/xtream-iptv-player" },
-      { label: "Xtream IPTV APK", href: "/xtream-iptv-apk" },
-      { label: "Xtream Codes", href: "/xtream-codes" },
+      { label: "Player Uygulamaları", href: "/xtream-iptv-player" },
+      { label: "Android APK Kurulumu", href: "/xtream-iptv-apk" },
+      { label: "Codes ile Giriş", href: "/xtream-codes" },
     ],
   },
   anbieter: {
     title: "Bilgi",
     links: [
-      { label: "Xtream IPTV Kodları", href: "/xtream-iptv-kodlari" },
+      { label: "Giriş Kodları", href: "/xtream-iptv-kodlari" },
       { label: "Kurulum Rehberi", href: "/installation" },
       { label: "Blog", href: "/blog" },
       { label: "SSS", href: "/faq" },

@@ -26,7 +26,7 @@ export function CoverageMap() {
               50+ ülkede <span className="text-gold-gradient">canlı yayın kapsamı</span>
             </>
           }
-          subtitle="Dünya genelinde dağıtılmış sunucular, nerede olursanız olun kesintisiz ve hızlı bir Xtream IPTV deneyimi sunar."
+          subtitle="Dünya genelinde dağıtılmış sunucular, nerede olursanız olun kesintisiz ve hızlı bir izleme deneyimi sunar."
         />
 
         <div className="mx-auto mt-14 max-w-4xl">

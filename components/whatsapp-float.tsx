@@ -25,7 +25,7 @@ export function WhatsAppFloat() {
       <AnimatePresence>
         {bubble && (
           <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.9 }}
+            initial={{ y: 10, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             className="glass-strong relative max-w-[220px] rounded-2xl rounded-br-sm p-4 pr-8 text-sm text-slate-200"

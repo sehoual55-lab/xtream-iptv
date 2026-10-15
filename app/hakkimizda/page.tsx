@@ -38,7 +38,7 @@ export default function AboutPage() {
         description="Xtream IPTV, Türkiye'deki kullanıcılar için premium IPTV aboneliği sunan bir yayın hizmetidir. Amacımız basit: kesintisiz yayın, dürüst fiyat ve her an ulaşabileceğiniz bir destek ekibi."
       />
 
-      <section className="section pt-4">
+      <section id="about" className="section pt-4">
         <div className="container">
           <div className="mx-auto max-w-3xl space-y-5 text-lg leading-relaxed text-slate-300">
             <Reveal>

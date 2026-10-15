@@ -13,6 +13,9 @@ export function ContactForm() {
 
   return (
     <form
+      action="/kontakt"
+      method="get"
+      aria-label="İletişim formu"
       onSubmit={(e) => {
         e.preventDefault();
         window.open(buildWhatsAppLink(composed), "_blank", "noopener,noreferrer");
@@ -44,7 +47,7 @@ export function ContactForm() {
             className="w-full rounded-xl border border-white/10 bg-charcoal-900/60 px-4 py-3 text-white focus:border-orange/50 focus:outline-none focus:ring-1 focus:ring-orange/30"
           >
             <option>Genel Soru</option>
-            <option>Xtream IPTV / Sipariş</option>
+            <option>Abonelik / Sipariş</option>
             <option>Kurulum Yardımı</option>
             <option>Teknik Sorun</option>
             <option>Uzatma / Yükseltme</option>

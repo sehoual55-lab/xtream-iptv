@@ -93,6 +93,11 @@ export function websiteJsonLd() {
     datePublished: siteConfig.dates.published,
     dateModified: siteConfig.dates.updated,
     publisher: { "@id": `${siteConfig.url}/#organization` },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: { "@type": "EntryPoint", urlTemplate: `${siteConfig.url}/ara?q={search_term_string}` },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 

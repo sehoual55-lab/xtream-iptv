@@ -8,8 +8,8 @@ const devices: { key: BrandKey; label: string; note: string }[] = [
   { key: "samsung", label: "Samsung TV", note: "Tizen App" },
   { key: "lg", label: "LG Smart TV", note: "webOS App" },
   { key: "sony", label: "Sony TV", note: "Android TV" },
-  { key: "amazon", label: "Fire TV Stick", note: "IPTV Smarters" },
-  { key: "appletv", label: "Apple TV", note: "IPTV Smarters" },
+  { key: "amazon", label: "Fire TV Stick", note: "Smarters Pro" },
+  { key: "appletv", label: "Apple TV", note: "Smarters Pro" },
   { key: "apple", label: "iPhone & iPad", note: "iOS App" },
   { key: "android", label: "Android", note: "TiviMate" },
   { key: "chromecast", label: "Google TV", note: "Chromecast" },
@@ -30,14 +30,14 @@ export function SupportedDevices() {
               Her cihazda <span className="text-gold-gradient">yayında</span>
             </>
           }
-          subtitle="Tek abonelik, tüm ekranlar. Xtream IPTV; Smart TV, yayın çubukları, konsollar, telefonlar ve bilgisayarlarda çalışır."
+          subtitle="Tek abonelik, tüm ekranlar: Smart TV, yayın çubukları, konsollar, telefonlar ve bilgisayarlarda çalışır."
         />
 
         <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {devices.map((d, i) => (
             <motion.div
               key={d.key}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.45, delay: (i % 4) * 0.06 }}

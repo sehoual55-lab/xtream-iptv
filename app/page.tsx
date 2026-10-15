@@ -11,6 +11,7 @@ import { InstallationGuides } from "@/components/sections/installation-guides";
 import { Testimonials } from "@/components/sections/testimonials";
 import { FaqAccordion } from "@/components/sections/faq-accordion";
 import { BlogLatest } from "@/components/sections/blog-latest";
+import { ContactForm } from "@/components/sections/contact-form";
 import { Cta } from "@/components/sections/cta";
 import { SectionHeading } from "@/components/section-heading";
 import { JsonLd } from "@/components/jsonld";
@@ -63,7 +64,7 @@ export default async function HomePage() {
             eyebrow="// SIKÇA SORULAN SORULAR"
             title={
               <>
-                Xtream IPTV hakkında <span className="text-gold-gradient">her şey</span>
+                Merak edilen <span className="text-gold-gradient">her şey</span>
               </>
             }
             subtitle="En önemli yanıtlar tek bakışta. Başka sorunuz mu var? Destek ekibimiz her zaman yardıma hazır."
@@ -81,6 +82,26 @@ export default async function HomePage() {
 
       {/* 11. Latest Guides */}
       <BlogLatest />
+
+      {/* 12. Quick contact form */}
+      <section className="section pt-0">
+        <div className="container">
+          <div className="mx-auto max-w-2xl">
+            <SectionHeading
+              eyebrow="// BİZE YAZIN"
+              title={
+                <>
+                  Sorunuz mu var? <span className="text-gold-gradient">Hemen yazın</span>
+                </>
+              }
+              subtitle="Kurulum, paket seçimi veya cihaz uyumu hakkında sorun; mesajınız WhatsApp'ta açılır ve dakikalar içinde yanıtlanır."
+            />
+            <div className="mt-10">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* 12. Premium CTA */}
       <Cta />
     </>

@@ -39,8 +39,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-              <strong className="text-silver-light">Xtream IPTV</strong>, Türkiye için premium yayın kontrol
-              merkezidir: 130.000+ kanal, 140.000+ film &amp; dizi 4K kalitede, Xtream Codes girişi, kararlı
+              <strong className="text-silver-light">Platformumuz</strong>, Türkiye için premium yayın kontrol
+              merkezidir: 130.000+ kanal, 140.000+ film &amp; dizi 4K kalitede, kolay giriş, kararlı
               sunucular ve 7/24 Türkçe destek.
             </p>
             <div className="mt-6 flex flex-col gap-3 text-sm">
@@ -83,7 +83,7 @@ export function Footer() {
             </time>
           </p>
           <div className="flex flex-wrap gap-6">
-            <Link href="/hakkimizda" className="hover:text-slate-300">Hakkımızda</Link>
+            <Link href="/hakkimizda#about" className="hover:text-slate-300">Hakkımızda</Link>
             <Link href="/datenschutz" className="hover:text-slate-300">Gizlilik</Link>
             <Link href="/agb" className="hover:text-slate-300">Kullanım Şartları</Link>
             <Link href="/kontakt" className="hover:text-slate-300">İletişim</Link>
