@@ -80,7 +80,7 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" title={`${siteConfig.brand.name} Blog`} href="/feed.xml" />
       </head>
       <body className="min-h-screen font-sans">
-        {/* WA-ORDER */}<Script src="/wa-order.js?v=2" strategy="beforeInteractive" />
+        {/* WA-ORDER */}<Script src="/wa-order.js?v=9" strategy="beforeInteractive" />
         <Header />
         <main>{children}</main>
         <Footer />
